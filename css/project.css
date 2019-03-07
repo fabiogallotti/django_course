@@ -1,0 +1,34 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border: 60px solid #4286f4;
+    border-top: 0px;
+    margin: 0px;
+}
+
+p{
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.userinput{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+h2{
+  margin-bottom: 5%;
+}
+
+#submit{
+    background-color: orange;
+    color: black;
+    border-radius: 25px;
+    font-size: 2.0em;
+    width: 200px;
+    height: 75px;
+    margin-bottom: 4px;
+}
