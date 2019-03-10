@@ -1,3 +1,3 @@
-# html-css
+# Html-Css
 
-Exercises on html and css
+Exercises on Html, Css and Bootstrap.
