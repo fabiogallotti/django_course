@@ -13,11 +13,11 @@ restart.addEventListener('click',clearBoard)
 function changeMarker() {
   if (this.textContent === '') {
     this.textContent = 'X';
-    } else if (this.textContent === 'X') {
-      this.textContent = 'O';
-    } else {
-      this.textContent = '';
-    }
+  } else if (this.textContent === 'X') {
+    this.textContent = 'O';
+  } else {
+    this.textContent = '';
+  }
 };
 
 // Use a for loop to add Event listeners to all the squares
