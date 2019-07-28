@@ -1,3 +1,11 @@
+### Creating a project
+* `django-admin startproject my_project`
+
+### Creating a django app
+* `cd my_project`
+* `django-admin startapp my_app`
+
+
 In order to have your django project working with Docker, you should:
 
 ### Prepare the image ###
@@ -19,7 +27,7 @@ In the `settings.py` file, inside the project folder, set `ALLOWED_HOSTS = ['*']
 
 Inside the container, do the following:
 
-* `cd first_project`
+* `cd my_project`
 * `python manage.py runserver 0.0.0.0:8000`
 
 Be careful to specify the IP address and the port you want to run the server (i.e. `0.0.0.0:8000`).
