@@ -3,25 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Users</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hi, this is the list of the users:</h1>
-
-    <div class="users">
-      {% if users %}
-      <ol>
-      {% for user in users %}
-        <li>User Info</li>
-          <ul>
-            <li>First Name: {{ user.first_name }}</li>
-            <li>Last Name: {{ user.last_name }}</li>
-            <li>Email: {{ user.email }}</li>
-          </ul>
-      {% endfor %}
-      </ol>
-      {% else %}
-        <p>NO USER FOUND!</p>
-      {% endif %}
+    <div class="container">
+      <h1>Please sign up here:</h1>
+      <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
     </div>
   </body>
 </html>
